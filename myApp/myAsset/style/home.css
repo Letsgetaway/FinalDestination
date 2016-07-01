@@ -7,7 +7,7 @@ html{
 	background-size: fill;
 	opacity:0.8;
 	z-index: -100;
-	background-repeat:no-repeat;
+	background-repeat:repeat-y;
 	background-color:rgb(128, 229, 255);
 }
 
