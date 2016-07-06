@@ -124,7 +124,7 @@ var dbEconomical = [
 }
 ];
 
-var adventurous = [
+var dbAdventurous = [
 {
 	continent: 'North America',
 	country: 'United States',
@@ -187,7 +187,7 @@ var adventurous = [
 }
 ];
 
-var Luxurious = [
+var dbLuxurious = [
 {
 	continent: 'North America',
 	country: 'United States',
@@ -249,3 +249,131 @@ var Luxurious = [
 	city: 'Sharm El Sheikh, Reef Oasis Blue Bay Resort'
 }
 ];
+
+var dbRelaxing = [
+{
+	continent: 'North America',
+	country: 'United States',
+	city: 'Big Island',
+},
+{
+	continent: 'North America',
+	country: 'Canada',
+	city: 'Banff',
+},
+{
+	continent: 'Europe',
+	country: 'Iceland',
+	city: 'Landmannalaugar',
+},
+{
+	continent: 'Europe',
+	country: 'France',
+	city: 'The Dordogne',
+},
+{
+	continent: 'Asia',
+	country: 'Indonesia',
+	city: 'Ubud',
+},
+{
+	continent: 'Asia',
+	country: 'Thailand',
+	city: 'Ang Thong National Park',
+},
+{
+	continent: 'South America',
+	country: 'Mexico',
+	city: 'Valladolid',
+},
+{
+	continent: 'South America',
+	country: 'Chile',
+	city: 'Torres Del Paine National Park',
+},
+{
+	continent: 'Australia',
+	country: 'New Zealand',
+	city: 'Bay of Islands'
+},
+{
+	continent: 'Australia',
+	country: 'Australia',
+	city: 'Byron Bay',
+},
+{
+	continent: 'Africa',
+	country: 'South Africa',
+	city:'Kosi Bay'
+},
+{
+	continent: 'Africa',
+	country: 'Kenya',
+	city: 'Tiwi and Diani Beach'
+}
+];
+
+var dbScenic = [
+{
+	continent: 'North America',
+	country: 'United States',
+	city: 'Mendenhall Glacier Caves',
+},
+{
+	continent: 'North America',
+	country: 'Canada',
+	city: 'Prince Edward Island',
+},
+{
+	continent: 'Europe',
+	country: 'France',
+	city: 'Bonifacio',
+},
+{
+	continent: 'Europe',
+	country: 'Austria',
+	city: 'Hallstatt',
+},
+{
+	continent: 'Asia',
+	country: 'Laos',
+	city: 'Bokeo Nature Reserve',
+},
+{
+	continent: 'Asia',
+	country: 'Bhutan',
+	city: 'Tiger’s Nest Temple',
+},
+{
+	continent: 'South America',
+	country: 'Ecuador',
+	city: 'Galapagos Islands',
+},
+{
+	continent: 'South America',
+	country: 'Argentina',
+	city: 'Iguazu Falls',
+},
+{
+	continent: 'Australia',
+	country: 'Australia',
+	city: 'Broome'
+},
+{
+	continent: 'Australia',
+	country: 'Australia',
+	city: 'Darwin',
+},
+{
+	continent: 'Africa',
+	country: 'Zambia, Zimbabwe',
+	city:'Victoria Falls'
+},
+{
+	continent: 'Africa',
+	country: 'South Africa',
+	city: 'Table Mountain'
+}
+];
+
+
