@@ -3,7 +3,7 @@ html{
     position:absolute | center;
 	/*width:100%;*/
 	height:100%;
-	margin-left:17%;
+/*	margin-left:25%;*/
 	background-size: fill;
 	/*opacity:0.8;*/
 	z-index: -100;
@@ -12,7 +12,7 @@ html{
 }
 
 
-#sticky{
+/*header{
 
 	color: rgb(26, 163, 255);
 	font-family:helvetica;
@@ -28,18 +28,21 @@ html{
   background: #335C7D;
   position:absolute | center;
   color: #fff;
-/*  font-family: 'PT Sans', sans-serif;*/
+
+// set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
 }
 
 header.sticky {
-            position:absolute | center;
+            position: absolute | center;
             font-size: 70px;
             line-height: 48px;
             height: 48px; 
             width: 100%;
             background: #efc47D;
             text-align: left;
-            padding-left: 20px;
+            padding-left: 20px;*/
         }
 
 #mainBlock{

@@ -9,7 +9,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <style>
-header.sticky
+        header{
+            text-align: center;
+            font-size: 72px;
+            margin-left:-15%;
+            line-height: 108px;
+            height: 108px;
+            background: #335C7D;
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            
+            // set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        
+        header.sticky {
+            position: fixed;
+            font-size: 24px;
+            line-height: 48px;
+            height: 60px; 
+            width: 100%;
+            /*background: #efc47D;*/
+            opacity: 0.5;
+            text-align: left;
+            margin-left:6%;
+            padding-left: 8px;
+
+        }
 .mySlides {display:none}
 </style>
 
@@ -17,7 +44,7 @@ header.sticky
 <body>
 <div>
 <!-- our markup -->
-<header class = sticky ><h1>Lets Get Away</h1></header>
+<header><h1>Lets Get Away</h1></header>
 
 <!-- import jQuery -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
