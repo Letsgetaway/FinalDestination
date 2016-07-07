@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lets Get Away</title>
+    <meta charset="UTP-8">
+    <link rel="stylesheet" type="text/css" href="../myAsset/style/home.css">
+ </head> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+header.sticky
+.mySlides {display:none}
+</style>
+
+
+<body>
+<div id='sticky'>
+<!-- our markup -->
+<header class = 'sticky' ><h1>Lets Get Away</h1></header>
+
+<!-- import jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+<!-- write script to toggle class on scroll -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+</script>
+</div>
+
+<div id='mainBlock'>
+
+</div>
+</body>
+</html>
