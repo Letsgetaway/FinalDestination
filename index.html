@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lets Get Away</title>
+    <meta charset="UTP-8">
+    <link rel="stylesheet" type="text/css" href="myAsset/style/home.css">
+ </head> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+        header{
+            text-align: center;
+            position: absolute | center;
+            font-size: 90px;
+            margin-left:-20%;
+            line-height: 108px;
+            height: 108px;
+            background: #335C7D;
+            padding-top: 20px;
+            padding-left:22%;
+            color: #fff;
+            font-family: 'PT Sans', sans-serif;
+            
+            // set animation
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        
+        header.sticky {
+            position: fixed;
+            font-size: 24px;
+            line-height: 48px;
+            height: 60px; 
+            width: 100%;
+            padding-bottom:10px;
+            /*background: #efc47D;*/
+            opacity: 0.5;
+            text-align: left;
+            margin-left:13.4%;
+            padding-left: 10px;
+
+
+        }
+
+.mySlides {display:none}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+
+
+<body>
+<div>
+<!-- our markup -->
+<header><h1>Lets Get Away</h1></header>
+
+<!-- import jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+<!-- write script to toggle class on scroll -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+</script>
+</div>
+
+<br>
+<br>
+<div id = topBar class = "col-xs-12">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>
+  <li><a href="#destinations">Find your destination</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+
+</div>
+</ul>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+<div id='mainBlock'>
+<div class="w3-container">
+</div>
+
+<div class="w3-content" style="max-width:1000px">
+  <img class="mySlides" src="./myApp/myAsset/images/1.jpg" style="width:100%">
+  <img class="mySlides" src="./myApp/myAsset/images/2.jpg" style="width:100%">
+  <img class="mySlides" src="./myApp/myAsset/images/3.jpg" style="width:100%">
+ <img class="mySlides" src="./myApp/myAsset/images/4.jpg" style="width:100%">
+ <img class="mySlides" src="./myApp/myAsset/images/5.jpg" style="width:100%">
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="./myApp/myAsset/images/1.jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="./myApp/myAsset/images/2.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="./myApp/myAsset/images/3.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+     <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="./myApp/myAsset/images/4.jpg" style="width:100%" onclick="currentDiv(4)">
+    </div>
+     <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="./myApp/myAsset/images/5.jpg" style="width:100%" onclick="currentDiv(5)">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-border-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-border-red";
+}
+</script>
+</div>
+</body>
+</html>
