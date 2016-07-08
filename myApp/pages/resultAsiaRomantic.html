@@ -13,6 +13,8 @@
 <!-- header styles -->
 <style>
 
+        
+
 .mySlides {display:none}
 </style>
 
@@ -41,34 +43,10 @@ $(window).scroll(function() {
 </div>
 <!-- header codes till here -->
 <div id='mainBlock'>
- <div><h2>Enter your information below and find out where you should go next!</h2></div>
- <input id='userName' type='text' placeholder='Full Name'> 
- <br><br>
-   <input id='userAge' type='text' placeholder='Age'>
- <br><br>
-   <input id='userEmail' type='text' placeholder='Email'>
- <br><br>
-   <select name='Choose your Continent' id='continent' placeholder='Continent of Preference'>
-    <option value='Asia'>Asia</option>
-    <option value='Europe'>Europe</option>
-    <option value='Australia'>Australia</option>
-    <option value='North America'>North America</option>
-    <option value='South America'>South America</option>
-    <option value='Africa'>Africa</option>
-   </select>
- <br><br>
-    
-    <button class='styled' onclick='searchDB()' href = './resultAsiaRomantic.html'>Let's Get Away!</button>
-    <!--TODO: write a switch statement on href to redirect link -->
-</div>
-
+ <div id='userInformationDisplay'></div>
+ 
 </div>
 </body>
 <script src="../myAsset/JS/fakeDB.js"></script>
 <script src="../myAsset/JS/formFunction.js"></script>
 </html>
-
-
-
-
-
