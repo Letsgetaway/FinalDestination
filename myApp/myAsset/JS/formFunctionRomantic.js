@@ -4,15 +4,35 @@
 function searchDB (userContinent){
 	//take value from dropdown menu in form to 
 	var userContinent = document.getElementById('continent').value;
-	console.log(userContinent);
 
 	for (var i = 0; i < dbRomantic.length; i++) {
 	  if (userContinent === dbRomantic[i].continent){
-		console.log(dbRomantic[i].country + ': ' +dbRomantic[i].city)
 	  }
 	
 	
 }
+
+	
+var path; 
+
+	if(userContinent === 'Asia'){
+		path = "../pages/RomanticResult/resultAsiaRomantic.html"
+	} else if (userContinent === 'Europe'){
+		path = "../pages/RomanticResult/resultEuropeRomantic.html"
+	} else if (userContinent === 'Australia'){
+		path = "../pages/RomanticResult/resultAustraliaRomantic.html"
+	} else if (userContinent === 'North America'){
+		path = "../pages/RomanticResult/resultNorthAmericaRomantic.html"
+	} else if (userContinent === 'South America'){
+		path = "../pages/RomanticResult/resultSouthAmericaRomantic.html"
+	} else if (userContinent === 'Africa'){
+		path = "../pages/RomanticResult/resultAfricaRomantic.html"
+	};
+
+	location.href = path;
+
+	
+
 
 	var userName = document.getElementById('userName').value;
 	var userAge = document.getElementById('userAge').value;

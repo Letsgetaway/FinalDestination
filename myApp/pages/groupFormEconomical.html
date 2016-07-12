@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lets Get Away</title>
+    <meta charset="UTP-8">
+    <link rel="stylesheet" type="text/css" href="../myAsset/style/home.css">
+    <link rel="stylesheet" type="text/css" href="../myAsset/style/Form.css">
+   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ --> </head> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- header styles -->
+<style>
+
+.mySlides {display:none}
+</style>
+
+
+<body>
+<div>
+
+
+<!-- our markup -->
+<a id='homeButton'href="../../index.html"><header><h1>Lets Get Away</h1></header></a>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+<!-- write script to toggle class on scroll -->
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('header').addClass("sticky");
+    }
+    else{
+        $('header').removeClass("sticky");
+    }
+});
+</script>
+</div>
+<!-- header codes till here -->
+<div id='mainBlock'>
+ <div><h2>Enter your information below and find out where you should go next!</h2></div>
+ <input id='userName' type='text' placeholder='Full Name'> 
+ <br><br>
+   <input id='userAge' type='text' placeholder='Age'>
+ <br><br>
+   <input id='userEmail' type='text' placeholder='Email'>
+ <br><br>
+   <select name='Choose your Continent' id='continent' placeholder='Continent of Preference'>
+    <option  value='Asia'>Asia</option>
+    <option  value='Europe'>Europe</option>
+    <option  value='Australia'>Australia</option>
+    <option  value='North America'>North America</option>
+    <option  value='South America'>South America</option>
+    <option  value='Africa'>Africa</option>
+   </select>
+ <br><br>
+    
+    <button class='styled' onclick='searchDB()'>Let's Get Away!</button>
+    <!--TODO: write a switch statement on href to redirect link -->
+</div>
+
+</div>
+</body>
+<script src="../myAsset/JS/fakeDB.js"></script>
+<script src="../myAsset/JS/formFunctionEconomical.js"></script>
+</html>
+
+
+
+
+

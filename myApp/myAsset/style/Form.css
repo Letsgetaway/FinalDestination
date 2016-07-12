@@ -33,3 +33,6 @@ body{background-color:rgb(128, 229, 255);}
             padding-left: 8px;
 
         }
+a:link{
+    text-decoration: none;
+}
