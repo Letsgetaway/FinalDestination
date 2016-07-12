@@ -4,7 +4,8 @@
     <title>Lets Get Away</title>
     <meta charset="UTP-8">
     <link rel="stylesheet" type="text/css" href="myApp/myAsset/style/home.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+
+<!--     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
  </head> 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,36 +14,9 @@
 <!-- header styles -->
 <style>
 
-       /* header{
-            text-align: center;
-            font-size: 72px;
-            margin-left:-15%;
-            line-height: 108px;
-            height: 108px;
-            background: #335C7D;
-            color: #fff;
-            font-family: 'PT Sans', sans-serif;
-            
-            // set animation
-            -webkit-transition: all 0.4s ease;
-            transition: all 0.4s ease;
-        }
-        
-        header.sticky {
-            position: fixed;
-            font-size: 24px;
-            line-height: 48px;
-            height: 60px; 
-            width: 100%;
-            /*background: #efc47D;*/
-            /*opacity: 0.5;
-            text-align: left;
-            margin-left:6%;
-            padding-left: 8px;
 
-        }*/
+.mySlides
 
-.mySlides {display:none}
 </style>
 
 
@@ -69,26 +43,51 @@ $(window).scroll(function() {
 </script>
 </div>
 <!-- header codes till here -->
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#about">About Us</a></li>  
+  <li><a href="#news">Destinations</a></li>
+  <li><a href="#contact">Contact Us</a></li>
+
+</ul>
+
 <div id='mainBlock'>
 <div class="w3-container">
 </div>
+<br>
+<br>
+<br>
+<br>
 
-<div class="w3-content" style="max-width:1200px">
-  <img class="mySlides" src="myApp/myAsset/images/1.jpg" style="width:100%">
-  <img class="mySlides" src="myApp/myAsset/images/2.jpg" style="width:100%">
-  <img class="mySlides" src="myApp/myAsset/images/3.jpg" style="width:100%">
-
+<div class="w3-content" style="max-width:1000px">
+  <img class="mySlides" src="myApp/myAsset/images/home1.jpg" style="width:100%">
+  <img class="mySlides" src="myApp/myAsset/images/home2.jpeg" style="width:100%">
+  <img class="mySlides" src="myApp/myAsset/images/home3.jpg" style="width:100%">
+  <img class="mySlides" src="myApp/myAsset/images/home4.jpeg" style="width:100%">
+  <img class="mySlides" src="myApp/myAsset/images/home5.jpg" style="width:100%">
+  <img class="mySlides" src="myApp/myAsset/images/home6.jpg" style="width:100%">
+<div>
   <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/1.jpg" style="width:100%" onclick="currentDiv(1)">
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/home1.jpg" style="width:100%; height:auto;" onclick="currentDiv(1)">
     </div>
-    <div class="w3-col s4">
-      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/2.jpg" style="width:100%" onclick="currentDiv(2)">
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/home2.jpeg" style="width:100%;height:auto;margin:0" onclick="currentDiv(2)">
     </div>
-    <div class="w3-col s4">
-      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/3.jpg" style="width:100%" onclick="currentDiv(3)">
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/home3.jpg" style="width:100%;height:auto;"" onclick="currentDiv(3)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/home4.jpeg" style="width:100%;height:auto;" onclick="currentDiv(4)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/home5.jpg" style="width:100%;height:auto;" onclick="currentDiv(5)">
+    </div>
+    <div class="w3-col s2">
+      <img class="demo w3-border w3-hover-shadow" src="myApp/myAsset/images/home6.jpg" style="width:100%;height:auto;" onclick="currentDiv(6)">
     </div>
   </div>
+</div>
 </div>
 
 <script>
@@ -119,6 +118,6 @@ function showDivs(n) {
   dots[slideIndex-1].className += " w3-border-red";
 }
 </script>
-</div>
+
 </body>
 </html>
