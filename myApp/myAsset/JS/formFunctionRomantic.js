@@ -5,14 +5,14 @@ function searchDB (userContinent){
 	//take value from dropdown menu in form to 
 	var userContinent = document.getElementById('continent').value;
 
-	var tar = document.getElementById("result1")
-	var el = document.createElement('p');
-	var r;
+	// var tar = document.getElementsByClassName("resultBox");
+	// var el = document.createElement('p');
+	// var r;
 	for (var i = 0; i < dbRomantic.length; i++) {
 	  if (userContinent === dbRomantic[i].continent){
-	  	r = "dbRomantic[i].country + '\n' + dbRomantic[i].city;";
-	  } else {
-	  	r = 'wah wah';
+	  // 	r = dbRomantic[i].country + '\n' + dbRomantic[i].city;
+	  // } else {
+	  // 	r = null;
 	  }
 }
 
@@ -35,11 +35,11 @@ var path;
 
 	location.href = path;
 
+}
 
-
-el.textContent = r;
-tar.appendChild(el)
+// el.textContent = r;
+// tar.appendChild(el)
 	// TODO: figure out how to append the info to result div, and figure out multiple result into multiple div
 
-}
+
 

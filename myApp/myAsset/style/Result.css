@@ -40,6 +40,8 @@ a:link{
     font-family:helvetica;
     color:rgb(0, 0, 102);
     font-size:50px;
+    text-align:center;
+    margin-left:-10%;
 }
 .resultBox {
     position:relative;

@@ -4,21 +4,10 @@
     <title>Lets Get Away</title>
     <meta charset="UTP-8">
     <link rel="stylesheet" type="text/css" href="../../myAsset/style/home.css">
-    <link rel="stylesheet" type="text/css" href="../../myAsset/style/Form.css">
-   <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
- --> </head> 
+    <link rel="stylesheet" type="text/css" href="../../myAsset/style/Result.css">
+</head> 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- header styles -->
-<style>
-
-        
-
-.mySlides {display:none}
-</style>
-
-
 <body>
 <div>
 
@@ -26,27 +15,32 @@
 <!-- our markup -->
 <a id='homeButton'href="../../../index.html"><header><h1>Lets Get Away</h1></header></a>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
     
 <!-- write script to toggle class on scroll -->
-<script>
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1){  
-        $('header').addClass("sticky");
-    }
-    else{
-        $('header').removeClass("sticky");
-    }
-});
-</script>
+
 </div>
 <!-- header codes till here -->
 <div id='mainBlock'>
-
-
- 
+<h1 id="presentContinent">South America - Top Adventurous Locations</h1>
+ <div class="resultBox" id="result1">
+    <img class="img" src='../../myAsset/images/romanticLocations/LosRoques.jpg'>
+    <p class="locationDescription">
+        Country: Venezuela<br>
+        City: Los Roques<br>
+        <a href="http://www.fodors.com/world/south-america/venezuela">Click here for more information</a>
+    </p>
+</div>
+<div class="resultBox" id="result2">
+    <img class="img" src='../../myAsset/images/romanticLocations/PeruvianAmazon.jpg'>
+    <p class="locationDescription">
+        Country: Peru<br>
+        City: Peruvian Amazon<br>
+        <a href="http://www.fodors.com/world/south-america/peru/the-amazon-basin">Click here for more information</a>
+    </p>
+</div>
 </div>
 </body>
 <script src="../../myAsset/JS/fakeDB.js"></script>
-<script src="../../myAsset/JS/formFunction.js"></script>
+<script src="../../myAsset/JS/formFunctionAdventurous.js"></script>
 </html>
