@@ -178,7 +178,7 @@ var dbAdventurous = [
 {
 	continent: 'Africa',
 	country: 'South Africa',
-	city:'Imfolozi National Park'
+	city:'Umfolozi National Park'
 },
 {
 	continent: 'Africa',
