@@ -84,7 +84,6 @@ margin-left:-24px;
             line-height: 48px;
             height: 60px; 
             width: 100%;
-            /*background: #efc47D;*/
             opacity: 0.5;
             text-align: left;
             margin-left:11.5%;
@@ -121,3 +120,7 @@ li a {
 li a:hover {
     background-color: #111;
 }
+
+
+
+
