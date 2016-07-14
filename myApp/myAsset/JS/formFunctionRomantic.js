@@ -5,11 +5,15 @@ function searchDB (userContinent){
 	//take value from dropdown menu in form to 
 	var userContinent = document.getElementById('continent').value;
 
+	var tar = document.getElementById("result1")
+	var el = document.createElement('p');
+	var r;
 	for (var i = 0; i < dbRomantic.length; i++) {
 	  if (userContinent === dbRomantic[i].continent){
+	  	r = "dbRomantic[i].country + '\n' + dbRomantic[i].city;";
+	  } else {
+	  	r = 'wah wah';
 	  }
-	
-	
 }
 
 	
@@ -31,23 +35,11 @@ var path;
 
 	location.href = path;
 
-	
 
 
-	var userName = document.getElementById('userName').value;
-	var userAge = document.getElementById('userAge').value;
-	var userEmail = document.getElementById('userEmail').value;
-//create a list
-	var userInformation = 
-		' Name: ' + userName + ' Age: ' + userAge + ' Email: ' + userEmail
-	;
-//create a new element
-	var newElement = document.createElement ('list');
-//assign list to newElement
-	newElement.textContent = userInformation;
-//create divToAppendTo
-	var divToAppendTo = document.getElementById('userInformationDisplay');
-//divToAppendTo appending userInformationDisplay
-	divToAppendTo.appendChild(newElement);
+el.textContent = r;
+tar.appendChild(el)
+	// TODO: figure out how to append the info to result div, and figure out multiple result into multiple div
+
 }
 
